@@ -1,0 +1,346 @@
+{
+  "users": [
+    {
+      "id": "11111111-1111-4111-a111-111111111111",
+      "name": "Sarah Lin",
+      "email": "admin@synapse.ai",
+      "password_hash": "$2b$12$.YJ0uP5Z96BAOWwucbHcDuAXQ/FOZIqIWbpiLi7uBi0mGer/E1wNe",
+      "role": "admin",
+      "department": "operations",
+      "created_at": "2026-10-01T06:30:51.751Z",
+      "avatar_url": "/src/assets/images/avatar_exec_sarah_1793427664570.jpg"
+    },
+    {
+      "id": "22222222-2222-4222-a222-222222222222",
+      "name": "Marcus Vance",
+      "email": "manager@synapse.ai",
+      "password_hash": "$2b$12$.YJ0uP5Z96BAOWwucbHcDuAXQ/FOZIqIWbpiLi7uBi0mGer/E1wNe",
+      "role": "manager",
+      "department": "engineering",
+      "created_at": "2026-10-06T06:30:51.752Z",
+      "avatar_url": "/src/assets/images/avatar_exec_marcus_1793427664159.jpg"
+    },
+    {
+      "id": "33333333-3333-4333-a333-333333333333",
+      "name": "Elena Rostova",
+      "email": "employee@synapse.ai",
+      "password_hash": "$2b$12$.YJ0uP5Z96BAOWwucbHcDuAXQ/FOZIqIWbpiLi7uBi0mGer/E1wNe",
+      "role": "employee",
+      "department": "product",
+      "created_at": "2026-10-11T06:30:51.752Z"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-001",
+      "title": "FY2026 Q3 Capital Expenditure & Cloud Margin Review",
+      "department": "finance",
+      "file_type": "Financial Report",
+      "raw_content": "Q3 cloud infrastructure expenditures grew 14.2% quarter-over-quarter to $1.42M, primarily driven by GPU cluster provisioning for enterprise AI models. Operational margins contracted slightly to 71.4%. Recommendation: Implement reserved instance scheduling and cold-storage offloading by November 15, 2026 to reclaim approximately $180,000 monthly.",
+      "ai_summary": "Cloud expenditure climbed 14.2% to $1.42M due to GPU provisioning. Recommends RI reservations and storage tiering before mid-November to save $180K/mo.",
+      "extracted_entities": {
+        "sentiment": "Neutral",
+        "keyEntities": [
+          "$1.42M Q3 spend",
+          "71.4% gross margin",
+          "$180,000 monthly potential savings",
+          "Deadline: November 15, 2026"
+        ],
+        "actionItems": [
+          "Audit idle GPU instances across staging clusters",
+          "Finalize 1-year reserved cloud capacity commitment",
+          "Present revised unit economics at next Board Operations committee"
+        ]
+      },
+      "uploaded_by": "11111111-1111-4111-a111-111111111111",
+      "uploaded_by_name": "Sarah Lin",
+      "created_at": "2026-10-26T06:30:51.752Z"
+    },
+    {
+      "id": "doc-002",
+      "title": "Global Remote Work & Cross-Border Compliance Policy 2026",
+      "department": "hr",
+      "file_type": "HR Policy",
+      "raw_content": "This policy governs cross-border employment arrangements across APAC and EMEA. Mandatory 180-day physical presence thresholds trigger domestic corporate tax nexus obligations. All international business travel over 14 consecutive calendar days requires prior written sign-off from People Operations and Finance.",
+      "ai_summary": "Establishes international compliance boundaries for overseas remote employees, codifying 180-day tax nexus triggers and mandatory 14-day travel pre-approvals.",
+      "extracted_entities": {
+        "sentiment": "Positive",
+        "keyEntities": [
+          "180-day tax nexus ceiling",
+          "14-day travel notification rule",
+          "APAC and EMEA jurisdictions",
+          "People Ops and Tax Compliance"
+        ],
+        "actionItems": [
+          "Integrate automated immigration duration tracking into HRIS",
+          "Distribute updated tax residency compliance guidelines to department leads",
+          "Conduct bi-annual cross-border presence audit"
+        ]
+      },
+      "uploaded_by": "11111111-1111-4111-a111-111111111111",
+      "uploaded_by_name": "Sarah Lin",
+      "created_at": "2026-10-23T06:30:51.752Z"
+    },
+    {
+      "id": "doc-003",
+      "title": "Enterprise Architecture Spec: Distributed RAG & Semantic Cache",
+      "department": "engineering",
+      "file_type": "Technical Spec",
+      "raw_content": "Design specification for zero-leakage enterprise retrieval augmented generation. Embeddings generated via Gemini multimodal pipeline. Vector similarity query latency SLA set at under 35ms p99. Strict tenant isolation enforced at row-level security and vector collection partitions.",
+      "ai_summary": "Technical architecture specification outlining p99 <35ms query latency SLA and strict multi-tenant isolation for Gemini embedding pipelines.",
+      "extracted_entities": {
+        "sentiment": "Positive",
+        "keyEntities": [
+          "Gemini Multimodal Embeddings",
+          "35ms p99 latency SLA",
+          "Row-Level Security (RLS)",
+          "Tenant vector isolation"
+        ],
+        "actionItems": [
+          "Bench-test vector indexing throughput under 10k concurrent RPS",
+          "Verify zero cross-tenant query leakage in security penetration testing",
+          "Deploy hot cache failover across secondary availability zone"
+        ]
+      },
+      "uploaded_by": "22222222-2222-4222-a222-222222222222",
+      "uploaded_by_name": "Marcus Vance",
+      "created_at": "2026-10-28T06:30:51.752Z"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "wf-101",
+      "title": "SOC2 Type II Annual Security Certification Audit",
+      "description": "Coordinate cross-functional evidence collection across Engineering, IT, and HR for annual SOC2 re-certification.",
+      "department": "operations",
+      "status": "in_progress",
+      "priority": "critical",
+      "assigned_to": "11111111-1111-4111-a111-111111111111",
+      "assigned_to_name": "Sarah Lin",
+      "ai_suggestions": {
+        "recommendedSubtasks": [
+          {
+            "id": "st-1",
+            "title": "Export IAM access logs and inactive account audit",
+            "estimatedHours": 6,
+            "suggestedDepartment": "Engineering",
+            "completed": true
+          },
+          {
+            "id": "st-2",
+            "title": "Compile mandatory employee security training completion certs",
+            "estimatedHours": 4,
+            "suggestedDepartment": "HR",
+            "completed": true
+          },
+          {
+            "id": "st-3",
+            "title": "Execute third-party external penetration vulnerability scan",
+            "estimatedHours": 12,
+            "suggestedDepartment": "Operations",
+            "completed": false
+          }
+        ],
+        "riskAssessment": "Tight auditor timeline: Pending evidence collection from 3 vendor contracts could delay final report issuance by 10 business days."
+      },
+      "due_date": "2026-11-07T06:30:51.752Z",
+      "created_at": "2026-10-19T06:30:51.752Z"
+    },
+    {
+      "id": "wf-102",
+      "title": "Zero-Downtime Database Migration to Partitioned Clusters",
+      "description": "Implement blue-green migration pipeline to partition operational audit logs and document vector indices.",
+      "department": "engineering",
+      "status": "in_progress",
+      "priority": "high",
+      "assigned_to": "22222222-2222-4222-a222-222222222222",
+      "assigned_to_name": "Marcus Vance",
+      "ai_suggestions": {
+        "recommendedSubtasks": [
+          {
+            "id": "st-4",
+            "title": "Provision target replica cluster with logical replication slots",
+            "estimatedHours": 8,
+            "suggestedDepartment": "Engineering",
+            "completed": true
+          },
+          {
+            "id": "st-5",
+            "title": "Benchmark write lock contention on audit_logs table",
+            "estimatedHours": 5,
+            "suggestedDepartment": "Engineering",
+            "completed": false
+          },
+          {
+            "id": "st-6",
+            "title": "Simulate disaster recovery failover under synthetic traffic",
+            "estimatedHours": 10,
+            "suggestedDepartment": "Engineering",
+            "completed": false
+          }
+        ],
+        "riskAssessment": "High I/O spikes during initial data backfill could saturate shared disk throughput if scheduled during peak European business hours."
+      },
+      "due_date": "2026-11-14T06:30:51.752Z",
+      "created_at": "2026-10-25T06:30:51.752Z"
+    },
+    {
+      "id": "wf-103",
+      "title": "Unified Enterprise Copilot Onboarding Journey for Q4 Hires",
+      "description": "Design self-service interactive tutorial demonstrating document intelligence and workflow delegation to 45 new team members.",
+      "department": "product",
+      "status": "review",
+      "priority": "medium",
+      "assigned_to": "33333333-3333-4333-a333-333333333333",
+      "assigned_to_name": "Elena Rostova",
+      "ai_suggestions": {
+        "recommendedSubtasks": [
+          {
+            "id": "st-7",
+            "title": "Draft scenario-based prompt cheat-sheet for finance analysts",
+            "estimatedHours": 4,
+            "suggestedDepartment": "Product",
+            "completed": true
+          },
+          {
+            "id": "st-8",
+            "title": "Embed guided tour tooltips into main dashboard layout",
+            "estimatedHours": 6,
+            "suggestedDepartment": "Engineering",
+            "completed": true
+          },
+          {
+            "id": "st-9",
+            "title": "Gather qualitative feedback from pilot department cohort",
+            "estimatedHours": 5,
+            "suggestedDepartment": "HR",
+            "completed": false
+          }
+        ],
+        "riskAssessment": "Low risk. Minor dependencies on design approval for onboarding hero cards."
+      },
+      "due_date": "2026-11-04T06:30:51.752Z",
+      "created_at": "2026-10-21T06:30:51.752Z"
+    },
+    {
+      "id": "wf-104",
+      "title": "Enterprise Vendor Contract Rationalization",
+      "description": "Review duplicated SaaS licensing across Engineering and Operations to consolidate single-sign-on subscriptions.",
+      "department": "finance",
+      "status": "backlog",
+      "priority": "medium",
+      "assigned_to": null,
+      "ai_suggestions": {
+        "recommendedSubtasks": [
+          {
+            "id": "st-10",
+            "title": "Compile aggregated billing statements across departmental corporate cards",
+            "estimatedHours": 7,
+            "suggestedDepartment": "Finance",
+            "completed": false
+          },
+          {
+            "id": "st-11",
+            "title": "Renegotiate enterprise tier with cloud monitoring providers",
+            "estimatedHours": 9,
+            "suggestedDepartment": "Operations",
+            "completed": false
+          }
+        ],
+        "riskAssessment": "Potential pushback on tool replacement from specialized engineering squads."
+      },
+      "due_date": "2026-11-21T06:30:51.752Z",
+      "created_at": "2026-10-29T06:30:51.752Z"
+    },
+    {
+      "id": "wf-105",
+      "title": "Cross-Department AI Ethics & Governance Framework",
+      "description": "Publish verified guidelines for training data retention, model hallucination prevention, and executive review standards.",
+      "department": "operations",
+      "status": "completed",
+      "priority": "high",
+      "assigned_to": "11111111-1111-4111-a111-111111111111",
+      "assigned_to_name": "Sarah Lin",
+      "ai_suggestions": {
+        "recommendedSubtasks": [
+          {
+            "id": "st-12",
+            "title": "Align framework with NIST AI RMF and EU AI Act definitions",
+            "estimatedHours": 12,
+            "suggestedDepartment": "Operations",
+            "completed": true
+          },
+          {
+            "id": "st-13",
+            "title": "Review audit log export capabilities for compliance regulators",
+            "estimatedHours": 6,
+            "suggestedDepartment": "Engineering",
+            "completed": true
+          }
+        ],
+        "riskAssessment": "Completed successfully with executive committee ratification."
+      },
+      "due_date": "2026-10-28T06:30:51.752Z",
+      "created_at": "2026-10-01T06:30:51.752Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "user_id": "11111111-1111-4111-a111-111111111111",
+      "user_name": "Sarah Lin",
+      "action": "USER_LOGIN",
+      "details": {
+        "role": "admin",
+        "department": "operations"
+      },
+      "id": "93dbbdba-4c6c-4dd8-8205-8b2ca7892aef",
+      "created_at": "2026-10-31T06:31:04.307Z"
+    },
+    {
+      "id": "aud-001",
+      "user_id": "11111111-1111-4111-a111-111111111111",
+      "user_name": "Sarah Lin",
+      "action": "INITIATIVE_CREATED",
+      "details": {
+        "initiative": "SOC2 Type II Annual Security Certification Audit",
+        "department": "operations",
+        "priority": "critical"
+      },
+      "created_at": "2026-10-19T06:30:51.752Z"
+    },
+    {
+      "id": "aud-002",
+      "user_id": "22222222-2222-4222-a222-222222222222",
+      "user_name": "Marcus Vance",
+      "action": "DOCUMENT_INGESTED",
+      "details": {
+        "title": "Enterprise Architecture Spec: Distributed RAG",
+        "file_type": "Technical Spec",
+        "department": "engineering"
+      },
+      "created_at": "2026-10-28T06:30:51.752Z"
+    },
+    {
+      "id": "aud-003",
+      "user_id": "11111111-1111-4111-a111-111111111111",
+      "user_name": "Sarah Lin",
+      "action": "STATUS_UPDATED",
+      "details": {
+        "workflowId": "wf-105",
+        "newStatus": "completed"
+      },
+      "created_at": "2026-10-28T06:30:51.752Z"
+    },
+    {
+      "id": "aud-004",
+      "user_id": "33333333-3333-4333-a333-333333333333",
+      "user_name": "Elena Rostova",
+      "action": "COPILOT_QUERY",
+      "details": {
+        "query": "Summarize Q3 Cloud Margin and GPU expenditure",
+        "model": "gemini-2.5-flash"
+      },
+      "created_at": "2026-10-30T06:30:51.752Z"
+    }
+  ]
+}

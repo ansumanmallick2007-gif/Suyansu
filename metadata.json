@@ -1,0 +1,6 @@
+{
+  "name": "Synapse Enterprise AI",
+  "description": "Production-grade enterprise AI intelligence platform for cross-departmental workflow orchestration, automated document ingestion, and executive decision intelligence powered by Google Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
